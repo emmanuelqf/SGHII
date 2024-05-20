@@ -1,29 +1,83 @@
 body {
-    background-color: #f5f5f5;
-  }
-  
-  .logo {
-    max-width: 200px;
-  }
+  /* Inherit Bootstrap's default background color */
+}
 
-  h1 {
-    font-weight: bold;
-    text-align: center;  
-    
-  }
+.container-fluid {
+  padding: 20px; /* Add some padding for main content area */
+}
 
+#main-header {
+  text-align: center; /* Center the header text */
+  margin-bottom: 20px; /* Add some space below the header */
+}
 
-  h2 {
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .form-control {
-    border-radius: 5px;
-  }
-  
-  .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    border-radius: 5px;
-  }
+h1 {
+  font-size: 1.8rem; /* Adjust font size for heading */
+}
+
+.navigation {
+  display: flex; /* Display navigation links horizontally */
+  justify-content: space-between; /* Distribute links evenly */
+  padding-bottom: 20px; /* Add some space below the navigation */
+  border-bottom: 1px solid #ddd; /* Add a subtle border */
+}
+
+.navigation-link {
+  color: #333; /* Set link color */
+  text-decoration: none; /* Remove underline from links */
+  padding: 10px; /* Add some padding for links */
+}
+
+.navigation-link:hover {
+  color: #007bff; /* Change link color on hover */
+}
+
+.col-lg-6:first-child { /* Style the left column (logo and improvement text) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-fluid {
+  /* Inherit Bootstrap's default responsive image styling */
+}
+
+h2 {
+  margin-bottom: 15px; /* Adjust margin below subheading */
+}
+
+.col-lg-6:last-child { /* Style the right column (login form) */
+  display: flex;
+  justify-content: center;
+}
+
+.form-control {
+  /* Inherit Bootstrap's default form input styling */
+  margin-bottom: 15px; /* Add some space between form elements */
+}
+
+.btn-primary {
+  /* Inherit Bootstrap's default primary button styling */
+  padding: 10px 20px; /* Adjust button padding */
+}
+
+#togglePasswordButton {
+  margin-left: 10px; /* Add some space between button and input field */
+}
+
+.invalid-feedback {
+  /* Inherit Bootstrap's default invalid feedback styling */
+}
+
+#errorMessage {
+  color: red; /* Set error message color */
+  margin-top: 10px; /* Add some space above the error message */
+  display: none; /* Inherit Bootstrap's default hidden state */
+}
+
+a:last-child { /* Style the "Forgot Password" link */
+  margin-top: 15px; /* Add some space above the link */
+  display: block; /* Make it a block-level element */
+  text-align: center; /* Center the text */
+  color: #999;
+}
